@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cloaked Tab Launcher</title>
+  <style>
+    body {
+      background-color: #111;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 40px;
+    }
+    button {
+      background: #222;
+      border: 2px solid #00ffcc;
+      color: #00ffcc;
+      padding: 12px 24px;
+      margin: 10px;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    button:hover {
+      background: #00ffcc;
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+  <h1>Cloaked Website Launcher</h1>
+  <p>Click a button below to launch a cloaked tab.</p>
+
+  <button onclick="launch('https://example.com')">Launch Example.com</button>
+  <button onclick="launch('https://www.photopea.com')">Launch Photopea</button>
+  <button onclick="launch('https://www.desmos.com')">Launch Desmos</button>
+  <button onclick="launch('https://glitch.com')">Launch Glitch</button>
+
+  <script>
+    function launch(url) {
+      const win = window.open("about:blank", "_blank");
+      const doc = win.document;
+      const iframe = doc.createElement("iframe");
+      iframe.style.border = "none";
+      iframe.style.width = "100vw";
+      iframe.style.height = "100vh";
+      iframe.src = url;
+      doc.body.style.margin = "0";
+      doc.body.appendChild(iframe);
+      doc.title = "New Tab";
+    }
+  </script>
+</body>
+</html>
