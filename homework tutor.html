@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Cloaked Tab Launcher</title>
+  <title>Cloaked Tools Launcher</title>
   <style>
     body {
-      background-color: #111;
+      background-color: #121212;
       color: #fff;
       font-family: Arial, sans-serif;
       text-align: center;
       padding: 40px;
     }
+    h1 {
+      color: #00ffd5;
+    }
     button {
-      background: #222;
-      border: 2px solid #00ffcc;
-      color: #00ffcc;
+      background: #1e1e1e;
+      border: 2px solid #00ffd5;
+      color: #00ffd5;
       padding: 12px 24px;
       margin: 10px;
       border-radius: 10px;
@@ -22,19 +25,34 @@
       transition: all 0.2s;
     }
     button:hover {
-      background: #00ffcc;
+      background: #00ffd5;
       color: #000;
     }
   </style>
 </head>
 <body>
-  <h1>Cloaked Website Launcher</h1>
-  <p>Click a button below to launch a cloaked tab.</p>
+  <h1>Cloaked Tab Launcher</h1>
+  <p>Select a site to open in a disguised tab:</p>
 
-  <button onclick="launch('https://example.com')">Launch Example.com</button>
-  <button onclick="launch('https://www.photopea.com')">Launch Photopea</button>
-  <button onclick="launch('https://www.desmos.com')">Launch Desmos</button>
-  <button onclick="launch('https://glitch.com')">Launch Glitch</button>
+  <!-- Study Tools -->
+  <h2>📚 Study Tools</h2>
+  <button onclick="launch('https://www.gauthmath.com')">Gauth Math</button>
+  <button onclick="launch('https://www.desmos.com')">Desmos Calculator</button>
+  <button onclick="launch('https://www.photopea.com')">Photopea (Design)</button>
+
+  <!-- Proxies -->
+  <h2>🛡️ Proxies</h2>
+  <button onclick="launch('https://mathsspot.com')">Mathsspot</button>
+  <button onclick="launch('https://holyubofficial.net')">Holy Unblocker</button>
+  <button onclick="launch('https://interstellar.cx')">Interstellar Proxy</button>
+  <button onclick="launch('https://alloyproxy.org')">Alloy Proxy</button>
+
+  <!-- Games -->
+  <h2>🎮 Game Tools</h2>
+  <button onclick="launch('https://classroom6x.org')">Classroom 6X (Games)</button>
+  <button onclick="launch('https://ubg100.github.io')">UBG100</button>
+  <button onclick="launch('https://nowgg.com')">Now.gg (Mobile Games)</button>
+  <button onclick="launch('https://nes.zophar.net/roms/download/NES/Kirby\'s%20Adventure')">Kirby’s Adventure (NES ROM)</button>
 
   <script>
     function launch(url) {
@@ -52,3 +70,4 @@
   </script>
 </body>
 </html>
+
